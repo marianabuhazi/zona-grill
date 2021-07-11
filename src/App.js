@@ -4,8 +4,8 @@ import Menu from "./pages/Menu.js"
 import Services from "./pages/Services.js"
 import Family from "./pages/Family.js"
 import ContactUs from "./pages/ContactUs.js"
-import './App.css'
 import {BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
 
 
 
