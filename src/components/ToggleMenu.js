@@ -1,54 +1,79 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, {keyframes}from 'styled-components'
 
-const NavLinks=styled.div`
+const swipe=keyframes`
+    0%{
+        position:fixed;
+        transform: translateX(100px); opacity:1;
+    }
+    100% {
+        transform: translateX(0); opacity:0.93;
+    }
+`
+
+const Nav=styled.div`
     background-color:#3B2313;
-    width:45%;
     height:100%;
-    opacity:0.9;
+    opacity:0.93;
     right:0;
-    top:12vh;
+    top:5%;
+    position:fixed;
+    z-index: 4;
+    animation-name: ${swipe};
+    animation-duration: 1s;
+    @media only screen and (max-width: 768px) {
+        width:100%;
+    }
+`
+const NavLinks =styled.div`
+    height:70%;
+    padding-top:5rem;
     display: flex;
     flex-direction: column;
+    justify-content:space-around;
     align-items: flex-end;
-    padding-bottom:5vh;
-    padding-top:5vh;
-    position: fixed;
+    @media only screen and (max-width: 768px) {
+        align-items: center;
+    }
 `
+
 const Link = styled.a`
     color:#E5E5E5;
-    padding-top:1vw;
     padding-right:3vw;
     margin-right:1vw;
-    padding-left:3vw;
-    padding-bottom:1vw;
-    margin-top:1vw;
-    margin-bottom:1vw;
-    font-size:2.5vh;
+    padding-left:5vw;
+    font-size:1.2rem;
     font-family: 'PT Sans', sans-serif;
     text-align: center;
     text-decoration:none;
     &:hover{
-        text-shadow: 1px 0px #E5E5E5;
-        transition-duration: 0.3s;
-        background-color:#FB9A28;
+        color:#FB9A28;
+    }
+`
+const OrderLink = styled.a`
+    color:#E5E5E5;
+    padding-right:3vw;
+    margin-right:1vw;
+    padding-left:5vw;
+    font-size:1.4rem;
+    font-family: 'PT Sans', sans-serif;
+    font-weight:600;
+    text-align: center;
+    text-decoration:none;
+    &:hover{
+        color:#FB9A28;
+    }
+    @media only screen and (min-width: 769px) {
+        display:none;
     }
 `
 
-const Line= styled.div`
-    color:white;
-    text-align:center;
-    width:85%;
-    border-top:solid 0.5px white;
-    padding-bottom:2vw;
-    opacity: 0.5;
-`
+
 const ToggleMenu = () => {
     return (
-        <div>
+        <Nav>
           <NavLinks>
-              <Line/>
-                <Link href="https://zona-grill-inc.square.site/" >ORDER ONLINE</Link>
+                <OrderLink href="https://zona-grill-inc.square.site/" >ORDER ONLINE</OrderLink>
                     <Link href="/hours-location" >HOURS/LOCATION</Link>
                     <Link href="/menu" >MENU</Link>
                     <Link href="/services">SERVICES</Link>
@@ -59,7 +84,7 @@ const ToggleMenu = () => {
                     <Link href="/contact-us" >EMAIL SIGNUP</Link>
                     
           </NavLinks>
-        </div>
+        </Nav>
     )
 }
 
