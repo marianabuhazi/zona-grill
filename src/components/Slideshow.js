@@ -11,7 +11,7 @@ const ArrowRight = styled.i`
   border: solid white;
   border-width: 0 3px 3px 0;
   display: inline-block;
-  padding: 0.75rem;
+  padding: 0.7rem;
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
   right:5%;
@@ -28,7 +28,7 @@ const ArrowLeft = styled.i`
   border: solid white;
   border-width: 0 3px 3px 0;
   display: inline-block;
-  padding: 0.75rem;
+  padding: 0.7rem;
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
   left:5%;
@@ -41,28 +41,6 @@ const ArrowLeft = styled.i`
     padding: 0.8rem;
   }
 `
-const Slogan = styled.div`
-  position:absolute;
-  background-color:#3B2313;
-  padding:1rem;
-  opacity:0.86;
-  color:white;
-  top:80%;
-  text-align:center;
-  font-size:1.8rem;
-  font-family: 'PT Sans', sans-serif;
-  font-weight:600;
-  @media only screen and (max-width: 768px) {
-    width:100%;
-    padding-left:0rem;
-    padding-right:0rem;
-    font-size:1.6rem;
-  }
-  @media only screen and (max-width: 320px) {
-    font-size:1.4rem;
-  }
-`
-
 
 const Slideshow = () => {
     const images = [test1,test2, test3, test4];
@@ -83,12 +61,18 @@ const Slideshow = () => {
         }
         else { setCurrentSlide(images.length-1); } 
     }
+
+    const automatic = () =>{
+      setTimeout(nextSlide, 3500);
+    }
+    // automatic();
+
+
     return (
         <div>
             <Slide src={images[currentSlide]}/>
             <ArrowRight onClick={nextSlide}/>
             <ArrowLeft onClick={previousSlide}/>
-            <Slogan>Home is where {text[currentSlide]}</Slogan>
         </div>
     )
 }

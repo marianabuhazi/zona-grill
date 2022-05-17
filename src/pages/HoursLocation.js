@@ -19,11 +19,10 @@ const Title = styled.div`
   display:block;
   margin:auto;
   top:9rem;
-  background-color:#F9450C;
+  background-color:#F79521;
   padding-left:2.5rem;
   padding-right:2.5rem;
   color:white;
-  opacity:0.95;
   text-align:center;
   font-size:1.8rem;
   font-family: 'Sarala', sans-serif;
@@ -31,6 +30,7 @@ const Title = styled.div`
   text-shadow: 1.5px 1.5px #474747;
   @media only screen and (max-width: 768px) {
         top:8rem;
+        
     }
 `
 

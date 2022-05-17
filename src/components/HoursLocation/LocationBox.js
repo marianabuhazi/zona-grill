@@ -5,7 +5,7 @@ import styled from 'styled-components'
 const Wrapper = styled.div`
     display:block;
     position:relative;
-    top:-15rem;
+    top:-18rem;
     width:75%;
     margin:auto;
     background-color: #ffedd9;
@@ -14,7 +14,7 @@ const Wrapper = styled.div`
     margin-bottom:3rem;
     @media only screen and (max-width: 768px) {
         width:100%;
-        top:-18rem;
+        top:-20rem;
     }
 `
 
@@ -24,7 +24,7 @@ const City = styled.h1`
   padding-top:1rem;
   padding-left:3rem;
   margin:0;
-  color:#FF8B02;
+  color:#F9450C;
   text-decoration:underline;
   @media only screen and (max-width: 768px) {
         padding-left:0;
@@ -41,6 +41,7 @@ const Address = styled.h2`
   padding-left:3rem;
   color:black;
   @media only screen and (max-width: 768px) {
+    font-family: 'PT Sans', 'sans-serif';
     padding-left:0;
     text-align:center;
     font-size:1.1rem;

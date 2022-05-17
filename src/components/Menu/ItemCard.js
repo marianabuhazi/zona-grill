@@ -1,58 +1,65 @@
 import React from 'react';
 import styled from 'styled-components'
-import DobleCar from '../../images/Menu/doubleBurgers.png'
 
 const Card = styled.div`
-  position: absolute;
-  top: 20rem;
   display:flex;
-  flex-direction:row;
+  flex-direction:column;
   background-color:white;
-  padding:0;
-  margin:0;
-  width:min-content;
+  width:16rem;
+  height:20rem;
+  margin:1rem;
+`
+const ImageDiv = styled.div`
+  height:40%;
 `
 const Image = styled.img`
-  width:15rem;
-  height:15rem;
+  display:block;
+  width:auto;
+  height:100%;
+  margin:auto;
   object-fit:cover;
   padding:1rem;
+  border-radius:50%;
 `
 const Name= styled.h1`
-font-size:1.8rem;
+font-size:1.2rem;
+text-align:center;
 `
 
 const Text= styled.div`
-  padding:2rem;
+  height:60%;
+  padding:1rem 1.2rem 0.5rem 1.2rem;
   margin:0;
  font-family:'PT Sans', sans-serif;
 `
 
 const Description= styled.h2`
-  font-size:1.1rem;
+  font-size:0.85rem;
   font-weight:400;
 `
-const Price= styled.h2`
-  font-size:1rem;
+const Price= styled.span`
+  font-size:0.9rem;
   color:red;
+  padding:0.5rem;
 `
 
 
 
-const ItemCard = () => {
+const ItemCard = ({item, image}) => {
   return <Card>
-    <Image src={DobleCar}/>
+    <ImageDiv>
+      <Image src={image}/>
+    </ImageDiv>
     <Text>
       <Name>
-        Caraqueña Doble
+      {item.name}
       </Name>
       <Description>
-      Two choices of beef patty, grilled chicken or grilled pork. Contains: ham, American cheese, bacon, 
-      fried egg, cole, potato sticks, Zona Grill sauce and Ketchup. 
-      </Description>
+      {item.desc}  
       <Price>
-        $12
+      {item.price}
       </Price>
+      </Description>
     </Text>
   </Card>;
 };

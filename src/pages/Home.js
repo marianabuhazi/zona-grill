@@ -11,7 +11,7 @@ const Home = () => {
         <div>
             <NavBar/>
             <Slideshow/>
-            {/* <WelcomeHome/> */}
+            <WelcomeHome/>
             <FireFood/>
             <Reviews/>
             <Footer/>

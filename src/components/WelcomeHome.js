@@ -109,9 +109,7 @@ const ImageTextContainer = styled.a`
 const WelcomeHome = () => {
     return (
         <div>
-            <HeaderLogo src={welcomeHome}/>
-            <TransparentBtn/>
-            <WindowImages>
+            {/* <WindowImages>
                 <ImageTextContainer >
                     <Image src={workers}/>
                         <Text>Our Services</Text>
@@ -121,7 +119,7 @@ const WelcomeHome = () => {
                             <Text>Get to know us</Text>
                     </ImageTextContainer>
                 </WindowImages>
-            <Border src={fence}/>       
+            <Border src={fence}/>        */}
         </div>
     )
 }

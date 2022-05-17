@@ -2,9 +2,9 @@ import React, {useState} from 'react'
 import styled from 'styled-components'
 
 const Image = styled.img`
-    height:16rem;
+    height:15rem;
     object-fit:cover;
-    width:16rem;
+    width:15rem;
     opacity:0.5;
     @media only screen and (max-width: 1000px) {
         height:13rem;
@@ -37,7 +37,7 @@ const CenterImage = styled.img`
     }
 `
 const ImageCarousel = styled.div`
-    width:90%;
+    width:78%;
     padding:1rem;
     display:flex;
     flex-direction: row;
@@ -48,20 +48,16 @@ const ImageCarousel = styled.div`
     @media only screen and (max-width: 768px) {
         display:none;
     }
-    background-color:#f2e5d8;
+    background-color:none;
     z-index:3;
 `
 const ImageMobile = styled.img`
-    height:16.5rem;
+    height:14rem;
     object-fit:cover;
-    width:16.5rem;
-    @media only screen and (max-width: 425px) {
-        height:16rem;
-        width:16rem;
-    }
+    width:14rem;
     @media only screen and (max-width: 320px) {
-        height:13rem;
-        width:13rem;
+        height:12rem;
+        width:12rem;
     }
     box-shadow: 30rem, 30rem, black;
     z-index:3;
@@ -70,7 +66,7 @@ const ImageCarouselMobile = styled.div`
     width:100%;
     padding-top:1rem;
     padding-bottom:1rem;
-    background-color:#f2e5d8;
+    background-color:none;
     display:flex;
     flex-direction: row;
     align-items:center;
@@ -84,20 +80,19 @@ const ImageCarouselMobile = styled.div`
 `
 
 const Arrow = styled.button`
-    color: #F79521;
-    border-radius:2px;
-    font-size:2.5rem;
+    color: black;
+    font-size:2.2rem;
     border:none;
-    background-color:#fff6ed;
+    background-color:#fff5eb;
     font-family: 'Nanum Myeongjo', serif;
-    box-shadow: ${props => props.left ? "-4px 3.7px rgb(0 0 0 / 0.2)" : "4px 3.7px rgb(0 0 0 / 0.2)"} ;
     &:hover{
         cursor:pointer;
-        box-shadow: ${props => props.left ? "-5px 5px rgb(0 0 0 / 0.2)" : "4.5px 4.5px rgb(0 0 0 / 0.2)"} ;
-        color:#F9450C;
     }
     @media only screen and (min-width: 1500px) {
         font-size:3rem;
+    }
+    @media only screen and (max-width: 500px) {
+        font-size:1.5rem;
     }
     z-index:3;
 `

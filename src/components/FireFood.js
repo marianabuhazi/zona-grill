@@ -13,7 +13,7 @@ const Header = styled.h1`
     margin-top:3rem;
     font-family: 'Sarala', sans-serif;
     font-size:2.7rem;
-    margin-left:3rem;
+    text-align:center;
     @media only screen and (max-width: 768px) {
         font-size:2rem;
         margin-left:0rem;
@@ -35,6 +35,7 @@ const Header2 = styled.h1`
     text-align:center;
     padding-bottom:0;
     margin:0;
+    margin-top:1rem;
     @media only screen and (max-width: 768px) {
         font-size:1.1rem;
     }
@@ -56,6 +57,9 @@ const FireBorder = styled.img`
     padding-bottom:0;
     z-index:-1;
     object-fit:cover;
+    @media only screen and (max-width: 500px) {
+        bottom:13rem;
+    }
     @media only screen and (min-width: 1500px) {
         height:28rem;
         bottom:8rem;
@@ -67,7 +71,7 @@ const FireFood = () => {
     const orderLinks =["https://zona-grill-inc.square.site/?location=11eb752c11ee4844b276ac1f6bbba828&item=21", "https://zona-grill-inc.square.site/?location=11eb752c11ee4844b276ac1f6bbba828&item=2", "https://zona-grill-inc.square.site/?location=11eb752c11ee4844b276ac1f6bbba828&item=5", "https://zona-grill-inc.square.site/?location=11eb752c11ee4844b276ac1f6bbba828&item=14"] 
     return (
         <div>
-            <Header>Our food</Header>
+            <Header>Menu Options</Header>
             <Header2>Click to order this item ⬇️</Header2>
             <Gallery images={images} links={orderLinks}/>
             <FireBorder src={fire}></FireBorder>

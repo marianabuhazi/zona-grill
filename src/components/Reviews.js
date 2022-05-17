@@ -9,28 +9,23 @@ import reviewsList from "../components/ReviewsList.js"
 
 const Header = styled.h1`
     position:relative;
+    text-align:center;
     font-family: 'Sarala', sans-serif;
-    top:-9rem;
+    top:-10rem;
     font-size:2.7rem;
-    margin-left:3rem;
+    text-align:center;
     @media only screen and (max-width: 768px) {
-        font-size:2.2rem;
+        font-size:2rem;
         margin-left:0rem;
         text-align:center;
     }
-    @media only screen and (max-width: 600px) {
-        font-size:1.7rem;
-    }
-    @media only screen and (max-width: 425px) {
-        font-size:1.5rem;
-    }
     @media only screen and (max-width: 320px) {
-        font-size:1.9rem;
+        font-size:1.7rem;
         margin-left:0rem;
         text-align:center;
     }
     @media only screen and (min-width: 1800px) {
-        font-size:3.8rem;
+        font-size:3.5rem;
     }
 `
 
@@ -62,6 +57,7 @@ const Header3 = styled.h1`
     font-size:2rem;
     padding-top:0;
     margin-left:3rem;
+    text-align:center;
     @media only screen and (max-width: 768px) {
         margin:1rem;
         text-align:center;
@@ -191,8 +187,7 @@ const reviewItems = reviewsList;
 const Reviews = () => {
     return (
         <div>
-            <Header>Our Reviews</Header>
-            <Header2>Here's what our customers have to say... <Image src={reviews}></Image></Header2> 
+            <Header>Customer Reviews</Header>
             <Rectangle>
                 {reviewItems.map((review) =>
                     <Review>"{review}"</Review>
@@ -202,7 +197,7 @@ const Reviews = () => {
             <Question>Loved your experience at Zona Grill?</Question>
             <Btn href="https://g.page/r/CccObVU3nh3nEB0/review">START REVIEW</Btn>
             <Divisor/>
-            <Header3>Our corporate clients</Header3>
+            <Header3>Corporate Clients</Header3>
             <CorporateLogos>
                 <Logo src={cinemat}/>
                 <Logo src={thermofisher}/>
