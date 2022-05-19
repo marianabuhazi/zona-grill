@@ -28,6 +28,7 @@ const Title = styled.div`
   font-family: 'Sarala', sans-serif;
   font-weight:600;
   text-shadow: 1.5px 1.5px #474747;
+  border-radius:0px 15px 15px 0px;
   @media only screen and (max-width: 768px) {
         top:8rem;
         

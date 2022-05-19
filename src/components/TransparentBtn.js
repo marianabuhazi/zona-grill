@@ -2,16 +2,18 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Btn = styled.a`
-    width:4.5rem;
+    width:40%;
     position: relative;
+    top:-8rem;
     color:#3B2313;
     padding:0.5rem 0.8rem 0.5rem 0.8rem;
     font-size:1rem;
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Sarala', sans-serif;
     text-align: center;
     border:solid 3px #F79521;
-    font-weight:700;
-    text-decoration:underline;
+    font-weight:600;
+    text-decoration:none;
+    background-color:white;
     display:block;
     margin-top:3vh;
     margin-left:auto;
@@ -20,16 +22,15 @@ const Btn = styled.a`
         box-shadow:0px 0px 0px 1px #F79521 inset;
         transition: box-shadow 0.2s ease-in-out;
     }
-    @media only screen and (min-width: 1800px) {
-        width:5.8rem;
-        font-size:1.2rem;
+    @media only screen and (min-width: 425px) {
+        display:none;
     }
 `
 
 const TransparentBtn = () => {
     return (
         <div>
-            <Btn href="/hours-location">VISIT US</Btn>
+            <Btn href="/hours-location">ORDER ONLINE</Btn>
         </div>
     )
 }

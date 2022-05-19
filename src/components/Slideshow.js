@@ -6,12 +6,13 @@ import test2 from "../images/test2.jpg"
 import test3 from "../images/test3.jpg"
 import test4 from "../images/test4.jpg"
 import Slide from "../components/Slide.js"
+import Button from "../components/TransparentBtn.js"
 
 const ArrowRight = styled.i`
   border: solid white;
   border-width: 0 3px 3px 0;
   display: inline-block;
-  padding: 0.7rem;
+  padding: 0.6rem;
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
   right:5%;
@@ -21,14 +22,14 @@ const ArrowRight = styled.i`
   &:hover{
     cursor:pointer;
     box-shadow: 2px 2px rgb(0 0 0 / 0.3);
-    padding: 0.8rem;
+    padding: 0.65rem;
   }
 `
 const ArrowLeft = styled.i`
   border: solid white;
   border-width: 0 3px 3px 0;
   display: inline-block;
-  padding: 0.7rem;
+  padding: 0.6rem;
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
   left:5%;
@@ -38,7 +39,7 @@ const ArrowLeft = styled.i`
   &:hover{
     cursor:pointer;
     box-shadow: 2px 2px rgb(0 0 0 / 0.3);
-    padding: 0.8rem;
+    padding: 0.65rem;
   }
 `
 
@@ -62,10 +63,10 @@ const Slideshow = () => {
         else { setCurrentSlide(images.length-1); } 
     }
 
-    const automatic = () =>{
-      setTimeout(nextSlide, 3500);
-    }
-    automatic();
+    // const automatic = () =>{
+    //   setTimeout(nextSlide, 3500);
+    // }
+    // automatic();
 
 
     return (
@@ -73,6 +74,7 @@ const Slideshow = () => {
             <Slide src={images[currentSlide]}/>
             <ArrowRight onClick={nextSlide}/>
             <ArrowLeft onClick={previousSlide}/>
+            <Button/>
         </div>
     )
 }

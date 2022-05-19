@@ -8,6 +8,10 @@ const Card = styled.div`
   width:16rem;
   height:20rem;
   margin:1rem;
+  @media only screen and (max-width: 425px) {
+    width:100%;
+    height:18rem;
+  }
 `
 const ImageDiv = styled.div`
   height:40%;

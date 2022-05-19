@@ -45,6 +45,7 @@ const Title = styled.div`
   font-weight:600;
   text-shadow: 1.5px 1.5px #474747;
   z-index:2;
+  border-radius:0px 15px 15px 0px;
   @media only screen and (max-width: 768px) {
         top:8rem;
     }
@@ -68,16 +69,16 @@ const SectionHeader = styled.div`
   font-size:2rem;
   text-align:center;
   font-family: 'Sarala', sans-serif;
+  text-decoration:underline;
   color:#F9450C;
   opacity:0.9;
   padding-bottom:1rem;
 `
 
 const Image = styled.img`
-    width:15rem;
-    height:15rem;
+    width:13rem;
+    height:13rem;
     object-fit:cover;
-    border-radius:100%;
 `
 
 const SquareImage = styled.img`

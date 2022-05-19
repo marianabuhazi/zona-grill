@@ -86,6 +86,7 @@ const Title = styled.div`
   font-family: 'Sarala', sans-serif;
   font-weight:600;
   text-shadow: 1.5px 1.5px #474747;
+  border-radius:0px 15px 15px 0px;
   @media only screen and (max-width: 768px) {
         top:8rem;
     }
@@ -102,14 +103,17 @@ const Items = styled.div`
     flex-wrap:wrap;
     padding-top:3rem;
     padding-bottom:8rem;
+    @media only screen and (max-width: 425px) {
+        width:100%;
+    }
 `
 
 const SectionHeader = styled.div`
   width:100%;
   position:relative;
-  top:12rem;
+  top:13rem;
   opacity:0.95;
-  font-size:2rem;
+  font-size:1.8rem;
   text-align:center;
   font-family: 'Sarala', sans-serif;
 `
@@ -132,11 +136,14 @@ const StickyNavLinks = styled.span`
     font-family: 'PT Sans', 'sans-serif';
     font-weight:600;
     font-size:1rem;
-    opacity:0.9;
 `
 
 const Spacing = styled.div`
     margin:8rem;
+`
+
+const Link = styled.a`
+    text-decoration:none;
 `
 
 const Menu = () => {
@@ -146,31 +153,31 @@ const Menu = () => {
             <Fire src={invertedFire}/>
             <Title>Menu</Title>
             <StickyNav>
-                <a href="/menu/#Appetizers">
+                <Link href="/menu/#Appetizers">
                     <StickyNavLinks>
                         Appetizers
                     </StickyNavLinks>
-                </a>
-                <a href="/menu/#Burgers">
+                </Link>
+                <Link href="/menu/#Burgers">
                     <StickyNavLinks>
                         Burgers
                     </StickyNavLinks>
-                </a>
-                <a href="/menu/#Arepas">
+                </Link>
+                <Link href="/menu/#Arepas">
                     <StickyNavLinks>
                         Arepas
                     </StickyNavLinks>
-                </a>
-                <a href="/menu/#MixedArepas">
+                </Link>
+                <Link href="/menu/#MixedArepas">
                     <StickyNavLinks>
                         Mixed Arepas
                     </StickyNavLinks>
-                </a>
-                <a href="/menu/#Drinks">
+                </Link>
+                <Link href="/menu/#Drinks">
                     <StickyNavLinks>
                         Drinks
                     </StickyNavLinks>
-                </a>
+                </Link>
             </StickyNav>
             <div id="Appetizers">
                 <SectionHeader >Appetizers</SectionHeader>

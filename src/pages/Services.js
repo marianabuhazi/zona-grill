@@ -26,6 +26,7 @@ const Title = styled.div`
   font-family: 'Sarala', sans-serif;
   font-weight:600;
   text-shadow: 1.5px 1.5px #474747;
+  border-radius:0px 15px 15px 0px;
   @media only screen and (max-width: 768px) {
         top:8rem;
     }
@@ -71,14 +72,15 @@ const SectionHeader = styled.div`
   text-align:center;
   font-family: 'Sarala', sans-serif;
   color:#F9450C;
+  text-decoration:underline;
   opacity:0.9;
   padding-bottom:1rem;
 `
 
 const Image = styled.img`
-    width:14rem;
+    width:12rem;
+    height:12rem;
     padding-bottom:1rem;
-    border-radius:100%;
 `
 
 const Paragraph = styled.p`
