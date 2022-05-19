@@ -4,6 +4,7 @@ import NavBar from "../components/NavBar.js"
 import invertedFire from "../images/HoursLocation/InvertedFire.png"
 import ItemCard from "../components/Menu/ItemCard.js"
 import image from '../images/Menu/doubleBurgers.png'
+import Footer from "../components/Footer.js"
 
 
 const appetizers = [
@@ -121,7 +122,7 @@ const StickyNav = styled.div`
   background-color: #F9450C;
   width:100%;
   z-index:3;
-  padding:0.8rem 0rem;
+  padding:0.9rem 0rem;
   overflow:auto;
   white-space: nowrap;
 `
@@ -130,7 +131,12 @@ const StickyNavLinks = styled.span`
     color:white;
     font-family: 'PT Sans', 'sans-serif';
     font-weight:600;
-    font-size:0.9rem;
+    font-size:1rem;
+    opacity:0.9;
+`
+
+const Spacing = styled.div`
+    margin:8rem;
 `
 
 const Menu = () => {
@@ -213,6 +219,10 @@ const Menu = () => {
                 )})}
                 </Items>
             </div>
+            <Spacing>
+                 <br/>
+            </Spacing>
+            <Footer/>
         </div>
     )
 }

@@ -65,7 +65,7 @@ const Slideshow = () => {
     const automatic = () =>{
       setTimeout(nextSlide, 3500);
     }
-    // automatic();
+    automatic();
 
 
     return (

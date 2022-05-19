@@ -5,13 +5,14 @@ import styled from 'styled-components'
 const Wrapper = styled.div`
     display:block;
     position:relative;
-    top:-18rem;
+    top:18rem;
     width:75%;
     margin:auto;
     background-color: #ffedd9;
     opacity:0.85;
     padding-bottom:0rem;
     margin-bottom:3rem;
+    border-radius:15px;
     @media only screen and (max-width: 768px) {
         width:100%;
         top:-20rem;

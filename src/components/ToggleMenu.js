@@ -78,11 +78,7 @@ const ToggleMenu = () => {
                     <Link href="/menu" >MENU</Link>
                     <Link href="/services">SERVICES</Link>
                     <Link href="/our-family" >OUR FAMILY</Link>
-                    <Link href="/contact-us" >PRESS</Link>
                     <Link href="/contact-us" >CONTACT US</Link>
-                    <Link href="/contact-us" >FOLLOW US</Link>
-                    <Link href="/contact-us" >EMAIL SIGNUP</Link>
-                    
           </NavLinks>
         </Nav>
     )

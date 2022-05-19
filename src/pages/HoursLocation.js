@@ -12,7 +12,7 @@ const Fire = styled.img`
     width:100%;
     height:550px;
     object-fit:cover;
-
+    position:fixed;
 `
 const Title = styled.div`
   position:absolute;
@@ -46,15 +46,7 @@ const Title = styled.div`
 //     }
 // `
 
-const Divisor = styled.hr`
-    position:relative;
-    bottom:12rem;
-    color:black;
-    width:80%;
-`
 const CelebrityHeader = styled.h1`
-    position:relative;
-    bottom:10rem;
     text-align:center;
     font-family: 'Sarala', sans-serif;
     padding:0.11rem;
@@ -100,7 +92,6 @@ const Span = styled.span`
 const OrderLink = styled.a`
     width:10rem;
     position: relative;
-    top:-8.5rem;
     color:#3B2313;
     padding:0.5rem 0.8rem 0.5rem 0.8rem;
     font-size:1rem;
@@ -125,6 +116,10 @@ const OrderLink = styled.a`
         font-size:1rem;
     }
 
+`
+
+const Spacing = styled.div`
+    margin:12rem;
 `
 
 const HoursLocation = () => {
@@ -154,15 +149,15 @@ const HoursLocation = () => {
                 address="We are excited to open in Orlando. Coming Soon!" 
                 image={rollercoaster} imageWidth="10"
             />
-            <Divisor/>
-            <CelebrityHeader>Got late night <Span>cravings?</Span></CelebrityHeader>
-            <OrderLink>ORDER ONLINE</OrderLink>
             {/* <CelebrityHeader2>Here are some  Zona Grill fans you may recognize...</CelebrityHeader2> */}
             {/* <Cards>
                 <CelebrityCard image={WillyMartin} name="Willy Martin" position="Venezuelan Actor"/>
                 <CelebrityCard image={WillyMartin} name="Willy Martin" position="Venezuelan Actor"/>
                 <CelebrityCard image={WillyMartin} name="Willy Martin" position="Venezuelan Actor"/>
             </Cards> */}
+            <Spacing>
+                 <br/>
+            </Spacing>
             <Footer/> 
         </div>
     )

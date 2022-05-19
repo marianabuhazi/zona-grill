@@ -78,9 +78,11 @@ const Span = styled.span`
 `
 
 const Image = styled.img`
-    display: inline;
+    display: block;
+    position:relative;
+    bottom:11rem;
     width:10rem;
-    margin-left:1rem;
+    margin: auto;
     @media only screen and (max-width: 768px) {
         text-align:center;
         width:8rem;
@@ -182,12 +184,14 @@ const Logo = styled.img`
     }
 `
 
+
 const reviewItems = reviewsList;
 
 const Reviews = () => {
     return (
         <div>
             <Header>Customer Reviews</Header>
+            <Image src={reviews}/>
             <Rectangle>
                 {reviewItems.map((review) =>
                     <Review>"{review}"</Review>
