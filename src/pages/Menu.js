@@ -5,6 +5,7 @@ import invertedFire from "../images/HoursLocation/InvertedFire.png"
 import ItemCard from "../components/Menu/ItemCard.js"
 import image from '../images/Menu/doubleBurgers.png'
 import Footer from "../components/Footer.js"
+import './Menu.css'
 
 
 const appetizers = [
@@ -187,18 +188,11 @@ const StickyNav = styled.div`
 `
 
 const StickyNavLinks = styled.span`
-    color:white;
-    font-family: 'PT Sans', 'sans-serif';
-    font-weight:600;
-    font-size:1rem;
+    
 `
 
 const Spacing = styled.div`
     margin:8rem;
-`
-
-const Link = styled.a`
-    text-decoration:none;
 `
 
 const Menu = () => {
@@ -208,26 +202,18 @@ const Menu = () => {
             <Fire src={invertedFire}/>
             <Title>Menu</Title>
             <StickyNav>
-                <Link href="/menu/#Appetizers">
-                    <StickyNavLinks>
+                <a className="link" href="/menu/#Appetizers">
                         Appetizers
-                    </StickyNavLinks>
-                </Link>
-                <Link href="/menu/#Burgers">
-                    <StickyNavLinks>
+                </a>
+                <a className="link" href="/menu/#Burgers">
                         Burgers
-                    </StickyNavLinks>
-                </Link>
-                <Link href="/menu/#Arepas">
-                    <StickyNavLinks>
+                </a>
+                <a className="link" href="/menu/#Arepas">
                         Arepas
-                    </StickyNavLinks>
-                </Link>
-                <Link href="/menu/#MixedArepas">
-                    <StickyNavLinks>
+                </a>
+                <a className="link" href="/menu/#MixedArepas">
                         Mixed Arepas
-                    </StickyNavLinks>
-                </Link>
+                </a>
             </StickyNav>
             <div id="Appetizers">
                 <SectionHeader >Appetizers</SectionHeader>

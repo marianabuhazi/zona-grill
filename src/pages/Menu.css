@@ -1,0 +1,11 @@
+.link{
+    color:white;
+    font-family: 'PT Sans', 'sans-serif';
+    font-weight:600;
+    font-size:1rem;
+    text-decoration:none;
+}
+
+.link:hover{
+    text-decoration:underline;
+}

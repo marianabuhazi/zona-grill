@@ -66,7 +66,9 @@ const Price= styled.span`
 
 
 const ItemCard = ({item}) => {
-  const imgArr= {'cachapa':cachapa, 'hotdog':hotdog, 'tequenos':tequenos, 'patacon':patacon, 'pepito':pepito, 'mechada': mechada, 'reina':reina, 'cheese':cheese, 'brutal':brutal, 'doble':doble, 'caraquena':caraquena, 'catira':catira, 'pelua':pelua, 'sifrina':sifrina, 'peluavieja':peluavieja, 'catiravieja':catiravieja}
+  const imgArr= {'cachapa':cachapa, 'hotdog':hotdog, 'tequenos':tequenos, 'patacon':patacon, 
+  'pepito':pepito, 'mechada': mechada, 'reina':reina, 'cheese':cheese, 'brutal':brutal, 'doble':doble, 
+  'caraquena':caraquena, 'catira':catira, 'pelua':pelua, 'sifrina':sifrina, 'peluavieja':peluavieja, 'catiravieja':catiravieja}
   let source = imgArr[item.src];
   return <Card>
     <ImageDiv>

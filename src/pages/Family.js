@@ -12,7 +12,6 @@ import willy from '../images/willy-martin.JPG'
 import michelle from '../images/michelle-lewin.JPG'
 import eduardo from '../images/eduardo-orozco.JPG'
 import camionViejo from '../images/camionViejo.jpeg'
-import video from '../images/IMG_0599.mp4'
 import video2 from '../images/IMG_0600.mp4'
 import video3 from '../images/IMG_0601.mp4'
 

@@ -5,9 +5,12 @@ import Gallery from "../components/Gallery.js"
 import tequenos from "../images/tequenos.png"
 import doubleBurgers from "../images/doubleBurgers.png"
 import foodItems from "../images/foodItems.png"
-import workers from "../images/workers.png"
-import test1 from "../images/test1.jpg"
-import test2 from "../images/test2.jpg"
+import catiravieja from '../images/catira-vieja.jpeg'
+import pepito from '../images/pepito.jpeg'
+import patacones from '../images/patacones.jpeg'
+import sifrina from '../images/sifrina.jpeg'
+import cachapas from '../images/cachapas.jpeg'
+import parchita from '../images/parchita.jpeg'
 
 const Header = styled.h1`
     margin-top:3rem;
@@ -74,8 +77,8 @@ const Subtitle = styled.h3`
 `
 
 const FireFood = () => {
-    const images = [doubleBurgers, foodItems, workers, test1, test2, tequenos ];
-    const orderLinks =["https://zona-grill-inc.square.site/?location=11eb752c11ee4844b276ac1f6bbba828&item=21", "https://zona-grill-inc.square.site/?location=11eb752c11ee4844b276ac1f6bbba828&item=2", "https://zona-grill-inc.square.site/?location=11eb752c11ee4844b276ac1f6bbba828&item=5", "https://zona-grill-inc.square.site/?location=11eb752c11ee4844b276ac1f6bbba828&item=14"] 
+    const images = [patacones, pepito, catiravieja, doubleBurgers, sifrina, cachapas, parchita, tequenos ];
+    const orderLinks =[] 
     return (
         <div>
             <Header>Menu Options</Header>
