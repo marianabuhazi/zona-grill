@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import NavBar from "../components/NavBar.js"
 import invertedFire from "../images/HoursLocation/InvertedFire.png"
 import ItemCard from "../components/Menu/ItemCard.js"
-import image from '../images/Menu/doubleBurgers.png'
 import Footer from "../components/Footer.js"
 import './Menu.css'
 
@@ -13,33 +12,33 @@ const appetizers = [
         src:'tequenos',
         name:'Tequeños',
         desc:`Fried cheese sticks served with Mayo-Ketchup or guava-chipotle sauce.`,
-        price:'$5.50'
+        price:'$6'
     },
     {
         src:'cachapa',
         name:'Cachapa',
         desc:`Sweet corn pancake filled with soft white cheese, topped with shredded cheese and sour cream.`,
-        price:'$10'
+        price:'$10.50'
     },
     {
         src:'hotdog',
         name:'Hot Dog',
         desc:`Topped with green cabbage, potato sticks, Zona Grill sauce, ketchup and shredded Gouda cheese.`,
-        price:'$4'
+        price:'$5'
     },
     {
         src:'patacon',
         name:'Patacón',
         desc:`Fried green plantain served with shredded beef, chicken, grilled pork or mixed. Topped with green cabbage, Zona Grill sauce, 
         Ketchup and shredded white cheese.`,
-        price:'$9/$11'
+        price:'$10'
     },
     {
         src:'pepito',
         name:'Pepito',
         desc:`French baguette served with grilled chicken, steak, or mixed. Topped with green cabbage, Zona Grill sauce, Ketchup, 
         corn, potato sticks and shredded Gouda cheese.`,
-        price:'$13/$14'
+        price:'$14/$15'
     }
 ]
 
@@ -49,20 +48,20 @@ const burgers = [
         name:'Caraqueña',
         desc:`1 choice of beef patty, grilled chicken or grilled pork. Contains: ham, 
         American cheese, bacon, fried egg, green cabbage, potato sticks, Zona Grill sauce and Ketchup..`,
-        price:'$10'
+        price:'$11'
     },
     {
         src:'doble',
         name:'Caraqueña Doble',
         desc:`2 choices of beef patty, grilled chicken or grilled pork. Contains: ham, American cheese, 
         bacon, fried egg, green cabbage, potato sticks, Zona Grill sauce and Ketchup. `,
-        price:'$12'
+        price:'$12.50'
     },
     {
         src:'brutal',
         name:'Brutal',
         desc:`3 meats: beef patty, grilled chicken and grilled pork. Contains: ham, American cheese, bacon, fried egg, green cabbage, potato sticks, Zona Grill sauce and Ketchup..`,
-        price:'$14'
+        price:'$14.50'
     }
 ]
 
@@ -71,19 +70,19 @@ const arepas = [
         src:'reina',
         name:'Reina Pepia Arepa',
         desc:`Filled with shredded chicken, guacamole and Mayo.`,
-        price:'$9'
+        price:'$9.50'
     },
     {
         src:'mechada',
         name:'Shredded Meat Arepa',
         desc:`Choice of shredded beef, shredded chicken or grilled pork. `,
-        price:'$12'
+        price:'$8.50'
     },
     {
         src:'cheese',
         name:'Cheese Arepa',
         desc:`Choice of shredded white, shredded Gouda or soft Guayanés cheese.`,
-        price:'$14'
+        price:'$8.50'
     }
 ]
 
@@ -92,31 +91,31 @@ const mixedArepas = [
         src:'pelua',
         name:'Arepa Pelua',
         desc:`Filled with shredded beef and shredded Gouda cheese.`,
-        price:'$9'
+        price:'$9.50'
     },
     {
         src:'peluavieja',
         name:'Arepa Pelua Vieja',
         desc:`Filled with shredded beef and shredded white cheese. `,
-        price:'$12'
+        price:'$9.50'
     },
     {
         src:'catira',
         name:'Arepa Catira',
         desc:`Filled with shredded chicken and shredded Gouda cheese.`,
-        price:'$9'
+        price:'$9.50'
     },
     {
         src:'catiravieja',
         name:'Arepa Catira Vieja',
         desc:`Filled with shredded chicken and shredded white cheese. `,
-        price:'$12'
+        price:'$9.50'
     },
     {
         src:'sifrina',
         name:'Arepa Sifrina',
         desc:`Reina Pepia with shredded Gouda cheese.`,
-        price:'$14'
+        price:'$10'
     }
 ]
 
@@ -187,10 +186,6 @@ const StickyNav = styled.div`
   white-space: nowrap;
 `
 
-const StickyNavLinks = styled.span`
-    
-`
-
 const Spacing = styled.div`
     margin:8rem;
 `
@@ -220,7 +215,7 @@ const Menu = () => {
                 <Items>
                 {appetizers.map((item) => {
                     return(
-                            <ItemCard item={item} image={item.src}/>
+                            <ItemCard item={item}/>
                 )})}
                 </Items>
             </div>
@@ -229,7 +224,7 @@ const Menu = () => {
                 <Items>
                 {burgers.map((item) => {
                     return(
-                            <ItemCard item={item} image={item.src}/>
+                            <ItemCard item={item}/>
                 )})}
                 </Items>
             </div>
@@ -238,7 +233,7 @@ const Menu = () => {
                 <Items>
                 {arepas.map((item) => {
                     return(
-                            <ItemCard item={item} image={item.src}/>
+                            <ItemCard item={item}/>
                 )})}
                 </Items>
             </div>
@@ -248,7 +243,7 @@ const Menu = () => {
                 <Items>
                 {mixedArepas.map((item) => {
                     return(
-                            <ItemCard item={item} image={image}/>
+                            <ItemCard item={item}/>
                 )})}
                 </Items>
             </div>

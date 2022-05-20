@@ -1,14 +1,14 @@
 /*BEFORE IMPORTING IMAGES INTO ARRAY, crop to Youtuve Cover size*/
 import React, {useState} from 'react'
 import styled from 'styled-components'
-import brutal from '../images/brutalPrep.JPG'
-import arepas from "../images/arepas.jpg"
-import customers1 from "../images/customers1.jpg"
-import burgerassemble from "../images/burger-assemble.JPG"
-import workers from "../images/workers.jpeg"
-import shirt from "../images/shirt.jpeg"
-import cachapa from "../images/cachapa-llanera.jpeg"
-import foodtruck from "../images/food-truck.jpeg"
+import brutal from '../images/Home/brutalPrep.JPG'
+import arepas from "../images/Home/arepas.jpg"
+import customers1 from "../images/Home/customers1.jpg"
+import burgerassemble from "../images/Home/burger-assemble.JPG"
+import workers from "../images/Home/workers.jpeg"
+import shirt from "../images/Home/shirt.jpeg"
+import cachapa from "../images/Home/cachapa-llanera.jpeg"
+import foodtruck from "../images/Home/food-truck.jpeg"
 import Slide from "../components/Slide.js"
 import Button from "../components/TransparentBtn.js"
 
@@ -71,7 +71,6 @@ const Slideshow = () => {
     //   setTimeout(nextSlide, 3500);
     // }
     // automatic();
-
 
     return (
         <div>

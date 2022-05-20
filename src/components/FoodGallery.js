@@ -1,10 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 import fire from "../images/fire.png"
-import Gallery from "../components/Gallery.js"
+import Gallery from "./Gallery.js"
 import tequenos from "../images/tequenos.png"
 import doubleBurgers from "../images/doubleBurgers.png"
-import foodItems from "../images/foodItems.png"
 import catiravieja from '../images/catira-vieja.jpeg'
 import pepito from '../images/pepito.jpeg'
 import patacones from '../images/patacones.jpeg'
@@ -76,9 +75,17 @@ const Subtitle = styled.h3`
     font-weight:400;
 `
 
-const FireFood = () => {
+const FoodGallery = () => {
     const images = [patacones, pepito, catiravieja, doubleBurgers, sifrina, cachapas, parchita, tequenos ];
-    const orderLinks =[] 
+    const orderLinks =['https://zona-grill-inc.square.site/?location=11eb752c11ee4844b276ac1f6bbba828&item=5',
+    'https://zona-grill-inc.square.site/?location=11eb752c11ee4844b276ac1f6bbba828&item=22',
+    'https://zona-grill-inc.square.site/?location=11eb752c11ee4844b276ac1f6bbba828&item=47',
+    'https://zona-grill-inc.square.site/?location=11eb752c11ee4844b276ac1f6bbba828&item=23',
+    'https://zona-grill-inc.square.site/?location=11eb752c11ee4844b276ac1f6bbba828&item=54',
+    'https://zona-grill-inc.square.site/?location=11eb752c11ee4844b276ac1f6bbba828&item=2',
+    'https://zona-grill-inc.square.site/?location=11eb752c11ee4844b276ac1f6bbba828&item=27',
+    'https://zona-grill-inc.square.site/?location=11eb752c11ee4844b276ac1f6bbba828&item=14'] 
+    
     return (
         <div>
             <Header>Menu Options</Header>
@@ -90,4 +97,4 @@ const FireFood = () => {
     )
 }
 
-export default FireFood
+export default FoodGallery

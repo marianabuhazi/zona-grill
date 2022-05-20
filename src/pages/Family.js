@@ -89,6 +89,8 @@ const SquareImage = styled.img`
 `
 
 const Paragraph = styled.p`
+    font-family: 'PT Sans', sans-serif;
+    font-weight:400;
     width:65%;
     @media only screen and (max-width: 768px) {
         width:100%;

@@ -72,7 +72,8 @@ const Image = styled.img`
 const Paragraph = styled.p`
     width:60%;
     padding:0.5rem;
-    font-family: 'PT Mono', 'sans-serif';
+    font-family: 'PT Sans', sans-serif;
+    font-weight:400;
     @media only screen and (max-width: 768px) {
         width:100%;
     }

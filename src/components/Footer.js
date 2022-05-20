@@ -1,7 +1,7 @@
 import React from 'react'
-import instagram from "../images/instagram.png"
-import facebook from "../images/facebook.png"
-import google from "../images/google.png"
+import instagram from "../images/Footer/instagram.png"
+import facebook from "../images/Footer/facebook.png"
+import google from "../images/Footer/google.png"
 import styled from 'styled-components'
 
 const Wrapper = styled.div`

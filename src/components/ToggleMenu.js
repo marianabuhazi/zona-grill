@@ -74,6 +74,7 @@ const ToggleMenu = () => {
         <Nav>
           <NavLinks>
                 <OrderLink href="https://zona-grill-inc.square.site/" >ORDER ONLINE</OrderLink>
+                    <Link href="/" >HOME</Link>
                     <Link href="/hours-location" >HOURS/LOCATION</Link>
                     <Link href="/menu" >MENU</Link>
                     <Link href="/services">SERVICES</Link>

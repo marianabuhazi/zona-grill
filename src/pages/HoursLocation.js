@@ -34,91 +34,6 @@ const Title = styled.div`
         
     }
 `
-
-// const Cards = styled.div`
-//     display:flex;
-//     flex-direction:row;
-//     width:90%;
-//     justify-content:space-around;
-//     margin:auto;
-//     flex-wrap:wrap;
-//     @media only screen and (max-width: 768px) {
-//         display:none;
-//     }
-// `
-
-const CelebrityHeader = styled.h1`
-    text-align:center;
-    font-family: 'Sarala', sans-serif;
-    padding:0.11rem;
-    padding-bottom:0;
-    @media only screen and (min-width: 769px) {
-        display:none;
-    }
-    @media only screen and (max-width: 768px) {
-        font-size:1.5rem;
-    }
-    @media only screen and (max-width: 425px) {
-        font-size:1.3rem;
-    }
-    @media only screen and (max-width: 320px) {
-        font-size:1.25rem;
-    }
-
-`
-// const CelebrityHeader2 = styled.h2`
-//     position:relative;
-//     bottom:10rem;
-//     text-align:center;
-//     font-family: 'Sarala', sans-serif;
-//     font-size:1.3rem;
-//     padding:1rem;
-//     padding-top:0;
-//     @media only screen and (max-width: 768px) {
-//         font-size:1.1rem;
-//     }
-//     @media only screen and (max-width: 425px) {
-//         font-size:0.9rem;
-//     }
-//     @media only screen and (max-width: 320px) {
-//         font-size:0.8rem;
-//     }
-// `
-const Span = styled.span`
-    font-family: 'Sarala', sans-serif;
-    color:#F9450C;
-    text-decoration:underline;
-`
-
-const OrderLink = styled.a`
-    width:10rem;
-    position: relative;
-    color:#3B2313;
-    padding:0.5rem 0.8rem 0.5rem 0.8rem;
-    font-size:1rem;
-    font-family: 'IBM Plex Sans', sans-serif;
-    text-align: center;
-    border:solid 3px #F79521;
-    font-weight:700;
-    text-decoration:underline;
-    display:block;
-    margin-top:3vh;
-    margin-left:auto;
-    margin-right:auto;
-    &:hover{
-        box-shadow:0px 0px 0px 1px #F79521 inset;
-        transition: box-shadow 0.2s ease-in-out;
-    }
-    @media only screen and (min-width: 769px) {
-        display:none;
-    }
-    @media only screen and (max-width: 768px) {
-        width:8rem;
-        font-size:1rem;
-    }
-
-`
-
 const Spacing = styled.div`
     margin:12rem;
 `
@@ -150,12 +65,6 @@ const HoursLocation = () => {
                 address="We are excited to open in Orlando. Coming Soon!" 
                 image={rollercoaster} imageWidth="10"
             />
-            {/* <CelebrityHeader2>Here are some  Zona Grill fans you may recognize...</CelebrityHeader2> */}
-            {/* <Cards>
-                <CelebrityCard image={WillyMartin} name="Willy Martin" position="Venezuelan Actor"/>
-                <CelebrityCard image={WillyMartin} name="Willy Martin" position="Venezuelan Actor"/>
-                <CelebrityCard image={WillyMartin} name="Willy Martin" position="Venezuelan Actor"/>
-            </Cards> */}
             <Spacing>
                  <br/>
             </Spacing>

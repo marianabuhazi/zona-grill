@@ -1,21 +1,21 @@
 import React from 'react';
 import styled from 'styled-components'
-import cachapa from '../../images/cachapa.JPG'
-import hotdog from '../../images/hotdog.JPG'
-import tequenos from '../../images/tequenos.JPG'
-import patacon from '../../images/patacon.JPG'
-import pepito from '../../images/pepito.JPG'
-import mechada from '../../images/mechada.JPG'
-import reina from '../../images/reinapepia.JPG'
-import cheese from '../../images/cheese.JPG'
-import brutal from '../../images/brutal.JPG'
-import doble from '../../images/doble.JPG'
-import caraquena from '../../images/caraquena.JPG'
-import catira from '../../images/catira.JPG'
-import pelua from '../../images/pelua.JPG'
-import sifrina from '../../images/sifrina.JPG'
-import peluavieja from '../../images/pelua-vieja.JPG'
-import catiravieja from '../../images/catira-vieja.JPG'
+import cachapa from '../../images/Menu/cachapa.JPG'
+import hotdog from '../../images/Menu/hotdog.JPG'
+import tequenos from '../../images/Menu/tequenos.JPG'
+import patacon from '../../images/Menu/patacon.JPG'
+import pepito from '../../images/Menu/pepito.JPG'
+import mechada from '../../images/Menu/mechada.JPG'
+import reina from '../../images/Menu/reinapepia.JPG'
+import cheese from '../../images/Menu/cheese.JPG'
+import brutal from '../../images/Menu/brutal.JPG'
+import doble from '../../images/Menu/doble.JPG'
+import caraquena from '../../images/Menu/caraquena.JPG'
+import catira from '../../images/Menu/catira.JPG'
+import pelua from '../../images/Menu/pelua.JPG'
+import sifrina from '../../images/Menu/sifrina.JPG'
+import peluavieja from '../../images/Menu/pelua-vieja.JPG'
+import catiravieja from '../../images/Menu/catira-vieja.JPG'
 
 const Card = styled.div`
   display:flex;
@@ -42,8 +42,9 @@ const Image = styled.img`
   border-radius:50%;
 `
 const Name= styled.h1`
-font-size:1.2rem;
-text-align:center;
+  font-family:'PT Sans', sans-serif;
+  font-size:1.2rem;
+  text-align:center;
 `
 
 const Text= styled.div`
@@ -64,12 +65,13 @@ const Price= styled.span`
 `
 
 
-
 const ItemCard = ({item}) => {
   const imgArr= {'cachapa':cachapa, 'hotdog':hotdog, 'tequenos':tequenos, 'patacon':patacon, 
   'pepito':pepito, 'mechada': mechada, 'reina':reina, 'cheese':cheese, 'brutal':brutal, 'doble':doble, 
   'caraquena':caraquena, 'catira':catira, 'pelua':pelua, 'sifrina':sifrina, 'peluavieja':peluavieja, 'catiravieja':catiravieja}
+
   let source = imgArr[item.src];
+  
   return <Card>
     <ImageDiv>
       <Image src={source} alt="Food"/>
