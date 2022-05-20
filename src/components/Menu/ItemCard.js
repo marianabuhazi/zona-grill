@@ -1,5 +1,21 @@
 import React from 'react';
 import styled from 'styled-components'
+import cachapa from '../../images/cachapa.JPG'
+import hotdog from '../../images/hotdog.JPG'
+import tequenos from '../../images/tequenos.JPG'
+import patacon from '../../images/patacon.JPG'
+import pepito from '../../images/pepito.JPG'
+import mechada from '../../images/mechada.JPG'
+import reina from '../../images/reinapepia.JPG'
+import cheese from '../../images/cheese.JPG'
+import brutal from '../../images/brutal.JPG'
+import doble from '../../images/doble.JPG'
+import caraquena from '../../images/caraquena.JPG'
+import catira from '../../images/catira.JPG'
+import pelua from '../../images/pelua.JPG'
+import sifrina from '../../images/sifrina.JPG'
+import peluavieja from '../../images/pelua-vieja.JPG'
+import catiravieja from '../../images/catira-vieja.JPG'
 
 const Card = styled.div`
   display:flex;
@@ -49,10 +65,12 @@ const Price= styled.span`
 
 
 
-const ItemCard = ({item, image}) => {
+const ItemCard = ({item}) => {
+  const imgArr= {'cachapa':cachapa, 'hotdog':hotdog, 'tequenos':tequenos, 'patacon':patacon, 'pepito':pepito, 'mechada': mechada, 'reina':reina, 'cheese':cheese, 'brutal':brutal, 'doble':doble, 'caraquena':caraquena, 'catira':catira, 'pelua':pelua, 'sifrina':sifrina, 'peluavieja':peluavieja, 'catiravieja':catiravieja}
+  let source = imgArr[item.src];
   return <Card>
     <ImageDiv>
-      <Image src={image}/>
+      <Image src={source} alt="Food"/>
     </ImageDiv>
     <Text>
       <Name>

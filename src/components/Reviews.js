@@ -184,7 +184,6 @@ const Logo = styled.img`
     }
 `
 
-
 const reviewItems = reviewsList;
 
 const Reviews = () => {
@@ -201,7 +200,7 @@ const Reviews = () => {
             <Question>Loved your experience at Zona Grill?</Question>
             <Btn href="https://g.page/r/CccObVU3nh3nEB0/review">START REVIEW</Btn>
             <Divisor/>
-            <Header3>Corporate Clients</Header3>
+            <Header3>Corporate Clients Served</Header3>
             <CorporateLogos>
                 <Logo src={cinemat}/>
                 <Logo src={thermofisher}/>

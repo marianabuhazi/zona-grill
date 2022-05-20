@@ -1,10 +1,14 @@
 /*BEFORE IMPORTING IMAGES INTO ARRAY, crop to Youtuve Cover size*/
 import React, {useState} from 'react'
 import styled from 'styled-components'
-import test1 from "../images/test1.jpg"
-import test2 from "../images/test2.jpg"
-import test3 from "../images/test3.jpg"
-import test4 from "../images/test4.jpg"
+import brutal from '../images/brutalPrep.JPG'
+import arepas from "../images/arepas.jpg"
+import customers1 from "../images/customers1.jpg"
+import burgerassemble from "../images/burger-assemble.JPG"
+import workers from "../images/workers.jpeg"
+import shirt from "../images/shirt.jpeg"
+import cachapa from "../images/cachapa-llanera.jpeg"
+import foodtruck from "../images/food-truck.jpeg"
 import Slide from "../components/Slide.js"
 import Button from "../components/TransparentBtn.js"
 
@@ -44,7 +48,7 @@ const ArrowLeft = styled.i`
 `
 
 const Slideshow = () => {
-    const images = [test1,test2, test3, test4];
+    const images = [brutal, workers, shirt, burgerassemble, foodtruck, cachapa, customers1, arepas];
     const text = ["Zona Grill is.","Caraqueñas are.", "Tequeños are.", "Patacones are."];
     const [currentSlide, setCurrentSlide] = useState(0);
 

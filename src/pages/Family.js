@@ -4,6 +4,7 @@ import NavBar from "../components/NavBar.js"
 import invertedFire from "../images/HoursLocation/InvertedFire.png"
 import Footer from "../components/Footer.js"
 import family from "../images/family.JPG"
+import familyMain from "../images/the-family.jpg"
 import image from '../images/Menu/doubleBurgers.png'
 import job from '../images/job.png'
 import blanca from '../images/blanca.jpeg'
@@ -144,7 +145,7 @@ const Family = () => {
     return (
         <div>
             <NavBar/>
-            <Polaroid src={family}/>
+            <Polaroid src={familyMain}/>
             <Title>Our Family</Title>
             <Wrapper>
                     <SectionHeader>Our Story</SectionHeader>

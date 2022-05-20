@@ -9,34 +9,34 @@ import Footer from "../components/Footer.js"
 
 const appetizers = [
     {
-        src:{image},
+        src:'tequenos',
         name:'Tequeños',
         desc:`Fried cheese sticks served with Mayo-Ketchup or guava-chipotle sauce.`,
         price:'$5.50'
     },
     {
-        src:`../../images/Menu/doubleBurgers.png`,
+        src:'cachapa',
         name:'Cachapa',
         desc:`Sweet corn pancake filled with soft white cheese, topped with shredded cheese and sour cream.`,
         price:'$10'
     },
     {
-        src:`../../images/Menu/doubleBurgers.png`,
+        src:'hotdog',
         name:'Hot Dog',
-        desc:`Topped with cole, potato sticks, Zona Grill sauce, ketchup and shredded Gouda cheese.`,
+        desc:`Topped with green cabbage, potato sticks, Zona Grill sauce, ketchup and shredded Gouda cheese.`,
         price:'$4'
     },
     {
-        src:`../../images/Menu/doubleBurgers.png`,
+        src:'patacon',
         name:'Patacón',
-        desc:`Fried green plantain served with shredded beef, chicken, grilled pork or mixed. Topped with cole, Zona Grill sauce, 
+        desc:`Fried green plantain served with shredded beef, chicken, grilled pork or mixed. Topped with green cabbage, Zona Grill sauce, 
         Ketchup and shredded white cheese.`,
         price:'$9/$11'
     },
     {
-        src:{image},
+        src:'pepito',
         name:'Pepito',
-        desc:`French baguette served with grilled chicken, steak, or mixed. Topped with cole, Zona Grill sauce, Ketchup, 
+        desc:`French baguette served with grilled chicken, steak, or mixed. Topped with green cabbage, Zona Grill sauce, Ketchup, 
         corn, potato sticks and shredded Gouda cheese.`,
         price:'$13/$14'
     }
@@ -44,23 +44,77 @@ const appetizers = [
 
 const burgers = [
     {
-        src:{image},
+        src:'caraquena',
         name:'Caraqueña',
-        desc:`Choice of beef patty, grilled chicken or grilled pork. Contains: ham, 
-        American cheese, bacon, fried egg, cole, potato sticks, Zona Grill sauce and Ketchup..`,
+        desc:`1 choice of beef patty, grilled chicken or grilled pork. Contains: ham, 
+        American cheese, bacon, fried egg, green cabbage, potato sticks, Zona Grill sauce and Ketchup..`,
         price:'$10'
     },
     {
-        src:`../../images/Menu/doubleBurgers.png`,
+        src:'doble',
         name:'Caraqueña Doble',
-        desc:`Two choices of beef patty, grilled chicken or grilled pork. Contains: ham, American cheese, 
-        bacon, fried egg, cole, potato sticks, Zona Grill sauce and Ketchup. `,
+        desc:`2 choices of beef patty, grilled chicken or grilled pork. Contains: ham, American cheese, 
+        bacon, fried egg, green cabbage, potato sticks, Zona Grill sauce and Ketchup. `,
         price:'$12'
     },
     {
-        src:`../../images/Menu/doubleBurgers.png`,
+        src:'brutal',
         name:'Brutal',
-        desc:`Beef patty, grilled chicken and grilled pork. Contains: ham, American cheese, bacon, fried egg, cole, potato sticks, Zona Grill sauce and Ketchup..`,
+        desc:`3 meats: beef patty, grilled chicken and grilled pork. Contains: ham, American cheese, bacon, fried egg, green cabbage, potato sticks, Zona Grill sauce and Ketchup..`,
+        price:'$14'
+    }
+]
+
+const arepas = [
+    {
+        src:'reina',
+        name:'Reina Pepia Arepa',
+        desc:`Filled with shredded chicken, guacamole and Mayo.`,
+        price:'$9'
+    },
+    {
+        src:'mechada',
+        name:'Shredded Meat Arepa',
+        desc:`Choice of shredded beef, shredded chicken or grilled pork. `,
+        price:'$12'
+    },
+    {
+        src:'cheese',
+        name:'Cheese Arepa',
+        desc:`Choice of shredded white, shredded Gouda or soft Guayanés cheese.`,
+        price:'$14'
+    }
+]
+
+const mixedArepas = [
+    {
+        src:'pelua',
+        name:'Arepa Pelua',
+        desc:`Filled with shredded beef and shredded Gouda cheese.`,
+        price:'$9'
+    },
+    {
+        src:'peluavieja',
+        name:'Arepa Pelua Vieja',
+        desc:`Filled with shredded beef and shredded white cheese. `,
+        price:'$12'
+    },
+    {
+        src:'catira',
+        name:'Arepa Catira',
+        desc:`Filled with shredded chicken and shredded Gouda cheese.`,
+        price:'$9'
+    },
+    {
+        src:'catiravieja',
+        name:'Arepa Catira Vieja',
+        desc:`Filled with shredded chicken and shredded white cheese. `,
+        price:'$12'
+    },
+    {
+        src:'sifrina',
+        name:'Arepa Sifrina',
+        desc:`Reina Pepia with shredded Gouda cheese.`,
         price:'$14'
     }
 ]
@@ -115,6 +169,7 @@ const SectionHeader = styled.div`
   opacity:0.95;
   font-size:1.8rem;
   text-align:center;
+  text-decoration:underline;
   font-family: 'Sarala', sans-serif;
 `
 
@@ -173,18 +228,13 @@ const Menu = () => {
                         Mixed Arepas
                     </StickyNavLinks>
                 </Link>
-                <Link href="/menu/#Drinks">
-                    <StickyNavLinks>
-                        Drinks
-                    </StickyNavLinks>
-                </Link>
             </StickyNav>
             <div id="Appetizers">
                 <SectionHeader >Appetizers</SectionHeader>
                 <Items>
                 {appetizers.map((item) => {
                     return(
-                            <ItemCard item={item} image={image}/>
+                            <ItemCard item={item} image={item.src}/>
                 )})}
                 </Items>
             </div>
@@ -193,16 +243,16 @@ const Menu = () => {
                 <Items>
                 {burgers.map((item) => {
                     return(
-                            <ItemCard item={item} image={image}/>
+                            <ItemCard item={item} image={item.src}/>
                 )})}
                 </Items>
             </div>
             <div id="Arepas">
                 <SectionHeader>Arepas</SectionHeader>
                 <Items>
-                {appetizers.map((item) => {
+                {arepas.map((item) => {
                     return(
-                            <ItemCard item={item} image={image}/>
+                            <ItemCard item={item} image={item.src}/>
                 )})}
                 </Items>
             </div>
@@ -210,17 +260,7 @@ const Menu = () => {
             <div id="MixedArepas">
                 <SectionHeader>Mixed Arepas</SectionHeader>
                 <Items>
-                {appetizers.map((item) => {
-                    return(
-                            <ItemCard item={item} image={image}/>
-                )})}
-                </Items>
-            </div>
-
-            <div id="Drinks">
-                <SectionHeader>Drinks</SectionHeader>
-                <Items>
-                {appetizers.map((item) => {
+                {mixedArepas.map((item) => {
                     return(
                             <ItemCard item={item} image={image}/>
                 )})}

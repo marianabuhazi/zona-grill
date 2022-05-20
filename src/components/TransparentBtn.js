@@ -30,7 +30,7 @@ const Btn = styled.a`
 const TransparentBtn = () => {
     return (
         <div>
-            <Btn href="/hours-location">ORDER ONLINE</Btn>
+            <Btn href="https://zona-grill-inc.square.site/">ORDER ONLINE</Btn>
         </div>
     )
 }

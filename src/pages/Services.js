@@ -3,6 +3,8 @@ import NavBar from "../components/NavBar.js"
 import styled from 'styled-components'
 import invertedFire from "../images/HoursLocation/InvertedFire.png"
 import image from '../images/Menu/doubleBurgers.png'
+import foodtruck from '../images/food-truck-main.jpg'
+import catering from '../images/catering.jpeg'
 import Footer from "../components/Footer.js"
 
 const Fire = styled.img`
@@ -78,8 +80,9 @@ const SectionHeader = styled.div`
 `
 
 const Image = styled.img`
-    width:12rem;
-    height:12rem;
+    width:14rem;
+    height:14rem;
+    object-fit:cover;
     padding-bottom:1rem;
 `
 
@@ -95,10 +98,15 @@ const TextImgHeader = styled.div`
     flex-direction: ${props => props.rev ? "row-reverse" : "row"};
     justify-content:space-around;
     flex-wrap:wrap;
+    align-items:center;
 `
 
 const Spacing = styled.div`
     margin:12rem;
+`
+const Bold = styled.span`
+    font-weight:600;
+    font-family:'Sarala','sans-serif';
 `
 
 const Services = () => {
@@ -110,15 +118,31 @@ const Services = () => {
             <Wrapper>
                     <SectionHeader>Food Truck</SectionHeader>
                     <TextImgHeader>
-                        <Image src={image}/>
-                        <Paragraph>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse risus nisi, iaculis vitae eros et, fringilla porta nisl. Nam dui metus, volutpat auctor nibh a, rhoncus lacinia massa. Nullam ac eleifend erat. Nunc nisi quam, tincidunt a felis sed, gravida interdum dolor. Curabitur ac ornare turpis, vitae semper justo. Quisque in suscipit diam.</Paragraph>
+                        <Image src={foodtruck}/>
+                        <Paragraph><Bold>Zona Grill Venezuelan Food</Bold> is a family-owned food truck in Wynwood, FL founded in 2013. 
+                            For almost a decade, we have served thousands of clients from all over the world. <br/><br/>
+                            Our goal is to provide our clients with a top-notch service,
+                            and the best quality food. <br/>Our food style is: "homemade Venezuelan street food". What we mean is: our food is always fresh,
+                            always homemade by us, and always representing our country, Venezuela.<br/><br/>
+                            Our delicacies include: burgers, hot dogs, cachapas, tequeños, arepas and more. Unlike our competitors, we can guarantee you that our food does not come from frozen or processed ingredients.<br/><br/>
+                            We are truly a <Bold>family business</Bold>, just picture it: Grandma Blanca is the owner, Uncle Richard "El Gordo" is the cook,
+                            Mom Patty is the manager, and I, Marian bring you all the online presence. All our employees are family members, and when you visit us we too will treat you like family.
+                            <br/><br/>Our menu options are meant to bring you a taste of our home country and happiness. We hope you enjoy!
+                            <br/><br/><Bold><a href="https://zona-grill-inc.square.site/">Order online</a></Bold>, or call<Bold> 786-930-9930</Bold> to order by phone.</Paragraph>
                     </TextImgHeader>
             </Wrapper>
             <Wrapper>
                     <SectionHeader>Catering</SectionHeader>
                     <TextImgHeader rev>
-                        <Image src={image}/>
-                        <Paragraph>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse risus nisi, iaculis vitae eros et, fringilla porta nisl. Nam dui metus, volutpat auctor nibh a, rhoncus lacinia massa. Nullam ac eleifend erat. Nunc nisi quam, tincidunt a felis sed, gravida interdum dolor. Curabitur ac ornare turpis, vitae semper justo. Quisque in suscipit diam.</Paragraph>
+                        <Image src={catering}/>
+                        <Paragraph>We have a catering service!<br/><br/>
+                        <Bold>Here's how it works</Bold>: We will establish a pricing estimate with you by phone or email, based on event size and menu requests. Then, we will bring our food truck to your location, 
+                        and provide an "all-you-can-eat" service to your party guests, although you can make adjustments. You could also choose a cater-only service at which we will just drop off our delicious food. 
+                        <br/><br/>For the first option, we will charge a set price for relocation of our truck. Then, we will charge a set price per person for the "all-menu" option. 
+                        <br/><br/>We will serve your guests at the food truck window first-come or you can request in advance
+                        that all your guests submit their orders via our Zona Grill Online Order Form, and we will have all food ready once we arrive at your party.
+                        <br/><br/>If you have other ideas about how you want us to cater the event, we are happy to accomodate all your suggestions and needs!
+                        <br/><br/>Contact Yackselys Zambrano at <Bold>zonagrillmiami@gmail.com </Bold>or <Bold>786-370-0271</Bold> for the quote.</Paragraph>
                     </TextImgHeader>
             </Wrapper>
             <Spacing>
