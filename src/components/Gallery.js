@@ -133,14 +133,14 @@ const Gallery = (props) => {
         <div>
             <ImageCarousel> 
                 <Arrow onClick={previousSlide} left>&lt;</Arrow>
-                <Image onClick={previousSlide} src={images[((currentSlide-1)+images.length)%images.length]}/>
-                <a target="_blank" rel="noopener noreferrer" href={links[(currentSlide)%images.length]}><CenterImage src={images[(currentSlide)%images.length]}/></a>
+                <Image onClick={previousSlide} src={images[((currentSlide-1)+images.length)%images.length]} alt="Zona Grill Food"/>
+                <a target="_blank" rel="noopener noreferrer" href={links[(currentSlide)%images.length]}><CenterImage src={images[(currentSlide)%images.length]} alt="Zona Grill Food"/></a>
                 <Image onClick={nextSlide} src={images[(currentSlide+1)%images.length]}/>
                 <Arrow onClick={nextSlide}>&gt;</Arrow>
             </ImageCarousel>
             <ImageCarouselMobile>
                 <Arrow onClick={previousSlide} left>&lt;</Arrow>
-                <a target="_blank" rel="noopener noreferrer" href={links[(currentSlide)%images.length]}><ImageMobile src={images[currentSlide]}/></a>
+                <a target="_blank" rel="noopener noreferrer" href={links[(currentSlide)%images.length]}><ImageMobile src={images[currentSlide]} alt="Zona Grill Food"/></a>
                 <Arrow onClick={nextSlide}>&gt;</Arrow>
             </ImageCarouselMobile>
             <Current>{currentSlide + 1}/{images.length}</Current>

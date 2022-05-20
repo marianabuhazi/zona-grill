@@ -1,10 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
-import reviews from "../images/reviews.png"
-import thermofisher from "../images/thermofisher.png"
-import telemundo from "../images/telemundo.png"
-import banda from "../images/banda.png"
-import cinemat from "../images/cinemat.png"
+import reviews from "../images/Reviews/reviews.png"
+import thermofisher from "../images/Reviews/thermofisher.png"
+import telemundo from "../images/Reviews/telemundo.png"
+import banda from "../images/Reviews/banda.png"
+import cinemat from "../images/Reviews/cinemat.png"
 import reviewsList from "../components/ReviewsList.js"
 
 const Header = styled.h1`
@@ -172,10 +172,10 @@ const Reviews = () => {
             <Divisor/>
             <Header2>Corporate Clients Served</Header2>
             <CorporateLogos>
-                <Logo src={cinemat}/>
-                <Logo src={thermofisher}/>
-                <Logo src={banda}/>
-                <Logo src={telemundo}/>
+                <Logo src={cinemat} alt="Cinemat Logo"/>
+                <Logo src={thermofisher} alt="Thermofisher Logo"/>
+                <Logo src={banda} alt="La Banda Logo"/>
+                <Logo src={telemundo} alt="Telemundo Logo"/>
             </CorporateLogos>
         </div>
     )

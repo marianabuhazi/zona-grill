@@ -20,7 +20,7 @@ const Image = styled.img`
 
 const Slide = ({src}) => {
     return (
-        <Image src={src}/>
+        <Image src={src} alt="Zona Grill Food"/>
     )
 }
 

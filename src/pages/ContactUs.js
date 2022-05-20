@@ -2,9 +2,9 @@ import React from 'react'
 import styled from 'styled-components'
 import NavBar from "../components/NavBar.js"
 import invertedFire from "../images/HoursLocation/InvertedFire.png"
-import foodItems from '../images/foodItems.png'
-import careers from '../images/careers.JPG'
-import catering from '../images/catering.JPG'
+import foodItems from '../images/ContactUs/foodItems.png'
+import careers from '../images/ContactUs/careers.JPG'
+import catering from '../images/ContactUs/catering.JPG'
 import Footer from "../components/Footer.js"
 
 const Title = styled.div`
@@ -108,7 +108,7 @@ const ContactUs = () => {
             <Wrapper>
                     <SectionHeader>Ordering</SectionHeader>
                     <TextImgHeader>
-                        <Image src={foodItems}/>
+                        <Image src={foodItems} alt="Zona Grill Food"/>
                         <Paragraph>We offer <Bold>takeout service</Bold> over the phone and through online ordering.<br/><br/>
                         <Bold>For phone ordering call</Bold>: <Color red><Bold>786-930-9930</Bold></Color> (only during operation hours)<br/><br/>
                         We also offer delivery through <Bold>UberEats and Postmates</Bold>, which can be requested directly on their app!<br/><br/></Paragraph>
@@ -117,7 +117,7 @@ const ContactUs = () => {
             <Wrapper>
                     <SectionHeader>Careers</SectionHeader>
                     <TextImgHeader rev>
-                        <Image src={careers}/>
+                        <Image src={careers} alt="Zona Grill Employees"/>
                         <Paragraph><Color red><Bold>We are hiring!</Bold></Color> <br/><br/>
                         Reach out to our manager, Yackselys Zambrano with your contact information, qualifications, and any questions if interested in applying for a position at Zona Grill.<br/><br/>
                         <Color><Bold>zonagrillmiami@gmail.com</Bold></Color><br/><br/>
@@ -133,7 +133,7 @@ const ContactUs = () => {
             <Wrapper>
                     <SectionHeader>Private Events</SectionHeader>
                     <TextImgHeader>
-                        <Image src={catering}/>
+                        <Image src={catering} alt="Zona Grill Catering"/>
                         <Paragraph>Want Zona Grill at your next corporate or private event?<br/><br/>
                         Reach out to our manager, Yackselys Zambrano, to request a quote for your event and explore all our catering options.<br/><br/>
                         <Color><Bold>zonagrillmiami@gmail.com<br/>

@@ -49,7 +49,6 @@ const ArrowLeft = styled.i`
 
 const Slideshow = () => {
     const images = [brutal, workers, shirt, burgerassemble, foodtruck, cachapa, customers1, arepas];
-    const text = ["Zona Grill is.","Caraqueñas are.", "Tequeños are.", "Patacones are."];
     const [currentSlide, setCurrentSlide] = useState(0);
 
     const nextSlide = () =>{

@@ -1,7 +1,7 @@
 import React,{useState} from 'react';
-import logo from "../images/logo.PNG"
-import menu from "../images/menu.png"
-import x from "../images/x.png"
+import logo from "../images/NavBar/logo.PNG"
+import menu from "../images/NavBar/menu.png"
+import x from "../images/NavBar/x.png"
 import styled from 'styled-components'
 import '../App.css'
 import ToggleMenu from "../components/ToggleMenu.js"

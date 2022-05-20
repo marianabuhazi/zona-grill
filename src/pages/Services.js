@@ -2,9 +2,8 @@ import React from 'react'
 import NavBar from "../components/NavBar.js"
 import styled from 'styled-components'
 import invertedFire from "../images/HoursLocation/InvertedFire.png"
-import image from '../images/Menu/doubleBurgers.png'
-import foodtruck from '../images/food-truck-main.jpg'
-import catering from '../images/catering.jpeg'
+import foodtruck from '../images/Services/food-truck-main.jpg'
+import catering from '../images/Services/catering.jpeg'
 import Footer from "../components/Footer.js"
 
 const Fire = styled.img`
@@ -32,26 +31,6 @@ const Title = styled.div`
   @media only screen and (max-width: 768px) {
         top:8rem;
     }
-`
-const StickyNav = styled.div`
-  display:flex;
-  justify-content:space-around;
-  position: fixed;
-  top: 4.15rem;
-  background-color: #F9450C;
-  width:100%;
-  z-index:3;
-  padding:0.9rem 0rem;
-  overflow:auto;
-  white-space: nowrap;
-`
-
-const StickyNavLinks = styled.span`
-    color:white;
-    font-family: 'PT Sans', 'sans-serif';
-    font-weight:600;
-    font-size:1rem;
-    opacity:0.9;
 `
 
 const Wrapper = styled.div`
@@ -120,7 +99,7 @@ const Services = () => {
             <Wrapper>
                     <SectionHeader>Food Truck</SectionHeader>
                     <TextImgHeader>
-                        <Image src={foodtruck}/>
+                        <Image src={foodtruck} alt="Zona Grill Food Truck"/>
                         <Paragraph><Bold>Zona Grill Venezuelan Food</Bold> is a family-owned food truck in Wynwood, FL founded in 2013. 
                             For almost a decade, we have served thousands of clients from all over the world. <br/><br/>
                             Our goal is to provide our clients with a top-notch service,
@@ -136,7 +115,7 @@ const Services = () => {
             <Wrapper>
                     <SectionHeader>Catering</SectionHeader>
                     <TextImgHeader rev>
-                        <Image src={catering}/>
+                        <Image src={catering} alt="Zona Grill Catering"/>
                         <Paragraph>We have a catering service!<br/><br/>
                         <Bold>Here's how it works</Bold>: We will establish a pricing estimate with you by phone or email, based on event size and menu requests. Then, we will bring our food truck to your location, 
                         and provide an "all-you-can-eat" service to your party guests, although you can make adjustments. You could also choose a cater-only service at which we will just drop off our delicious food. 

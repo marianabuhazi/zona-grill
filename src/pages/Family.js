@@ -1,32 +1,21 @@
 import React from 'react'
 import styled from 'styled-components'
 import NavBar from "../components/NavBar.js"
-import invertedFire from "../images/HoursLocation/InvertedFire.png"
 import Footer from "../components/Footer.js"
-import family from "../images/family.JPG"
-import familyMain from "../images/the-family.jpg"
-import image from '../images/Menu/doubleBurgers.png'
-import job from '../images/job.png'
-import blanca from '../images/blanca.jpeg'
-import willy from '../images/willy-martin.JPG'
-import michelle from '../images/michelle-lewin.JPG'
-import eduardo from '../images/eduardo-orozco.JPG'
-import camionViejo from '../images/camionViejo.jpeg'
-import video2 from '../images/IMG_0600.mp4'
-import video3 from '../images/IMG_0601.mp4'
+import familyMain from "../images/Family/the-family.jpg"
+import blanca from '../images/Family/blanca.jpeg'
+import willy from '../images/Family/willy-martin.JPG'
+import michelle from '../images/Family/michelle-lewin.JPG'
+import eduardo from '../images/Family/eduardo-orozco.JPG'
+import camionViejo from '../images/Family/camionViejo.jpeg'
+import video2 from '../images/Family/spain.mp4'
+import video3 from '../images/Family/colombia.mp4'
 
 const Polaroid = styled.img`
     width:100%;
     object-fit:cover;
     height:25rem;
     opacity:0.9;
-`
-
-const Fire = styled.img`
-    width:100%;
-    height:550px;
-    object-fit:cover;
-    position:fixed;
 `
 
 const Title = styled.div`
@@ -146,12 +135,12 @@ const Family = () => {
     return (
         <div>
             <NavBar/>
-            <Polaroid src={familyMain}/>
+            <Polaroid src={familyMain} alt="Zona Grill Family"/>
             <Title>Our Family</Title>
             <Wrapper>
                     <SectionHeader>Our Story</SectionHeader>
                     <TextImgHeader>
-                        <Image src={blanca}/>
+                        <Image src={blanca} alt="Zona Grill Owner"/>
                         <Paragraph>Zona Grill is a family restaurant founded in April 1996, in Caracas, Venezuela, by the entrepreneur Blanca Morales. Over the years, she has served food with a rigorous control, aspiring to preserve her traditional childhood recipes and combine Venezuelan and Colombian seasonings. Blanca has produced dishes that have delighted the palates of the clientele in her native country. <br/><br/>
                         After her migration to the City of Miami in 2010, Blanca consolidated the idea of restarting the family business under the concept of a food truck, due to the boom in the novelty of selling quality street food. In this manner, and partnered with chef Richard Gonzalez, they developed simple recipes, to please night, street-food lovers, while respecting good quality. <br/><br/>
                         Currently, Zona Grill operates with a service-oriented work philosophy and each of the members of our staff are committed to the business' mission. We thank all our customers for their support over the past years, as we hope to continue to serve delicious food for years to come. <br/><br/>
@@ -162,7 +151,7 @@ const Family = () => {
             <Wrapper>
                     <SectionHeader>Press</SectionHeader>
                     <TextImgHeader rev>
-                        <Image src={camionViejo}/>
+                        <Image src={camionViejo} alt="Zona Grill Old Food Truck"/>
                         <Paragraph>Over the years, Zona Grill has received recognition from various media sources for its excellent service, and food quality.<br/><br/>
                         Read about us in the Miami New Times: <a href="https://www.miaminewtimes.com/restaurants/zona-grill-surprises-with-venezuelan-flavors-in-wynwood-6604099">Zona Grill Surprises With Venezuelan Flavors in Wynwood</a> <br/> <br/>
                         Read about us in the Miami New Times: <a href="https://www.miaminewtimes.com/restaurants/la-hamburguesa-caraque-a-not-just-another-hamburger-7548417">La Hamburguesa Caraqueña: Not Just Another Hamburger</a> <br/> <br/>
@@ -175,12 +164,12 @@ const Family = () => {
                     <TextVideoHeader>
                         <Videos>
                             <video width="300" height="auto" controls>
-                                <source src={video2} type="video/mp4"/>
+                                <source src={video2} type="video/mp4" alt="Customer Video"/>
                                 Your browser does not support the video tag.
                             </video>
                             <br/>
                             <video width="300" height="auto" controls>
-                                <source src={video3} type="video/mp4"/>
+                                <source src={video3} type="video/mp4" alt="Customer Video"/>
                                 Your browser does not support the video tag.
                             </video>
                         </Videos>
@@ -201,9 +190,9 @@ const Family = () => {
                         <Paragraph>
                         </Paragraph>
                         <TextImgHeader>
-                            <SquareImage src={willy}/>
-                            <SquareImage src={michelle}/>
-                            <SquareImage src={eduardo}/>
+                            <SquareImage src={willy} alt="Willy Martin"/>
+                            <SquareImage src={michelle} alt="Michelle Lewin"/>
+                            <SquareImage src={eduardo} alt="Eduardo Orozco"/>
                         </TextImgHeader>
                     </TextImgHeader>
             </Wrapper>

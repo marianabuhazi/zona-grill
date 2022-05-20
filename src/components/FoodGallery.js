@@ -2,14 +2,15 @@ import React from 'react'
 import styled from 'styled-components'
 import fire from "../images/fire.png"
 import Gallery from "./Gallery.js"
-import tequenos from "../images/tequenos.png"
-import doubleBurgers from "../images/doubleBurgers.png"
-import catiravieja from '../images/catira-vieja.jpeg'
-import pepito from '../images/pepito.jpeg'
-import patacones from '../images/patacones.jpeg'
-import sifrina from '../images/sifrina.jpeg'
-import cachapas from '../images/cachapas.jpeg'
-import parchita from '../images/parchita.jpeg'
+import tequenos from "../images/FoodGallery/tequenos.png"
+import doubleBurgers from "../images/FoodGallery/doubleBurgers.png"
+import catiravieja from '../images/FoodGallery/catira-vieja.jpeg'
+import pepito from '../images/FoodGallery/pepito.jpeg'
+import patacones from '../images/FoodGallery/patacones.jpeg'
+import sifrina from '../images/FoodGallery/sifrina.jpeg'
+import cachapas from '../images/FoodGallery/cachapas.jpeg'
+import parchita from '../images/FoodGallery/parchita.jpeg'
+import caraquena from '../images/FoodGallery/caraquena.jpeg'
 
 const Header = styled.h1`
     margin-top:3rem;
@@ -76,7 +77,7 @@ const Subtitle = styled.h3`
 `
 
 const FoodGallery = () => {
-    const images = [patacones, pepito, catiravieja, doubleBurgers, sifrina, cachapas, parchita, tequenos ];
+    const images = [patacones, pepito, catiravieja, doubleBurgers, sifrina, cachapas, parchita, caraquena, tequenos];
     const orderLinks =['https://zona-grill-inc.square.site/?location=11eb752c11ee4844b276ac1f6bbba828&item=5',
     'https://zona-grill-inc.square.site/?location=11eb752c11ee4844b276ac1f6bbba828&item=22',
     'https://zona-grill-inc.square.site/?location=11eb752c11ee4844b276ac1f6bbba828&item=47',
@@ -84,6 +85,7 @@ const FoodGallery = () => {
     'https://zona-grill-inc.square.site/?location=11eb752c11ee4844b276ac1f6bbba828&item=54',
     'https://zona-grill-inc.square.site/?location=11eb752c11ee4844b276ac1f6bbba828&item=2',
     'https://zona-grill-inc.square.site/?location=11eb752c11ee4844b276ac1f6bbba828&item=27',
+    'https://zona-grill-inc.square.site/?location=11eb752c11ee4844b276ac1f6bbba828&item=3',
     'https://zona-grill-inc.square.site/?location=11eb752c11ee4844b276ac1f6bbba828&item=14'] 
     
     return (
