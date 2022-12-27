@@ -49,7 +49,9 @@ const Name= styled.h1`
 
 const Text= styled.div`
   height:60%;
-  padding:1rem 1.2rem 0.5rem 1.2rem;
+  /* padding:1rem 1.2rem 0.5rem 1.2rem; */
+  padding:1rem;
+  text-align:center;
   margin:0;
  font-family:'PT Sans', sans-serif;
 `
@@ -82,9 +84,9 @@ const ItemCard = ({item}) => {
       </Name>
       <Description>
       {item.desc}  
-      <Price>
+      {/* <Price>
       {item.price}
-      </Price>
+      </Price> */}
       </Description>
     </Text>
   </Card>;

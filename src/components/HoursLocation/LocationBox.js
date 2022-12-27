@@ -111,12 +111,12 @@ const LocationBox = (props) => {
                     <Section>
                         <Subtitle>{props.sub1}</Subtitle>
                         {props.text1 && <Text>
-                            Mon: 7:00-11:00pm <br/>
-                            Tue: 7:00-11:00pm <br/>
-                            Wed: 7:00-11:00pm <br/>
-                            Thu: 7:00-12:00am <br/>
-                            Fri: 7:00pm-12:00am <br/>
-                            Sat: 7:00-12:00am <br/>
+                            Mon: 6:00-11:00pm <br/>
+                            Tue: 6:00-11:00pm <br/>
+                            Wed: 6:00-11:00pm <br/>
+                            Thu: 6:00-12:00am <br/>
+                            Fri: 6:00pm-12:00am <br/>
+                            Sat: 6:00-12:00am <br/>
                             Sun: CLOSED
                         </Text>}
                     </Section>
