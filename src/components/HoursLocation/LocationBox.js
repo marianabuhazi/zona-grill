@@ -114,7 +114,7 @@ const LocationBox = (props) => {
                             Mon: 6:00-11:00pm <br/>
                             Tue: 6:00-11:00pm <br/>
                             Wed: 6:00-11:00pm <br/>
-                            Thu: 6:00-12:00am <br/>
+                            Thu: 6:00-11:00pm <br/>
                             Fri: 6:00pm-12:00am <br/>
                             Sat: 6:00-12:00am <br/>
                             Sun: CLOSED
