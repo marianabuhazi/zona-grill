@@ -45,17 +45,17 @@ const HoursLocation = () => {
             <Fire src={invertedFire}/>
             <Title>Hours/Location</Title>
             <LocationBox 
-                city="Orlando" 
-                address="Coming soon: 2570 E Irlo Bronson Memorial Hwy, Kissimmee, Fl 34744" 
+                city="Kissimmee" 
+                address="2570 E Irlo Bronson Memorial Hwy, Kissimmee, Fl 34744" 
                 image={rollercoaster} 
-                // sub1="Hours" 
-                // sub2="Parking"
+                sub1="Hours" 
+                sub2="Parking"
                 text1
-                // text2="Free parking is offered at our location."
+                text2="Free parking is offered at our location."
             />
 			<LocationBox 
                 city="Miami"
-                address="We have PERMANENTLY CLOSED our location at: 156 NE 28th St, Miami, Florida 33137." 
+                address="PERMANENTLY CLOSED: 156 NE 28th St, Miami, Florida 33137." 
                 image={rollercoaster} imageWidth="10"
             />
             <LocationBox 
