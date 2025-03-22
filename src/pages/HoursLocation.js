@@ -46,13 +46,13 @@ const HoursLocation = () => {
             <Title>Hours/Location</Title>
             <LocationBox 
                 city="Kissimmee" 
-                // address="2570 E Irlo Bronson Memorial Hwy, Kissimmee, Fl 34744" 
-				address="TEMPORARILY CLOSED: UNTIL FURTHER NOTICE"
+                address="2570 E Irlo Bronson Memorial Hwy, Kissimmee, Fl 34744" 
+				// address="TEMPORARILY CLOSED: UNTIL FURTHER NOTICE"
                 image={rollercoaster} 
-                // sub1="Hours" 
-                // sub2="Parking"
-                // text1
-                // text2="Free parking is offered at our location."
+                sub1="Hours" 
+                sub2="Parking"
+                text1
+                text2="Free parking is offered at our location."
             />
 			<LocationBox 
                 city="Miami"
